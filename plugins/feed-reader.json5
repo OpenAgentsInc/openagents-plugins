@@ -1,0 +1,44 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "RSS Reader",
+        "description": "Read an RSS feed",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "Daniel Ofosu",
+        "web": "https://github.com/DJrOf/rss-feed-plugin",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // FULL TEMPLATE
+    "template":"\
+    {\
+        \"kind\": {{{meta.kind}}},\
+        \"created_at\": {{{sys.timestamp_seconds}}},\
+        \"tags\": [\
+            [\"param\",\"run-on\", \"openagents/extism-runtime\" ],\
+            [\"param\",\"main\",\"https://github.com/DJrOf/rss-feed-plugin/raw/main/plugin.wasm\"],\
+            [\"i\", \"{{in.feed}}\", \"text\", \"\",  \"\"],\
+            [\"expiration\", \"{{{sys.expiration_timestamp_seconds}}}\"]\
+        ],\
+        \"content\":\"\"\
+    }\
+    ",
+    "sockets":{
+        "in":{
+            "feed":{
+                "type": "string",
+                "description": "The URL of the RSS feed",
+                "required": true,
+            }
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description": "The RSS feed",
+            }
+        }
+    }
+}

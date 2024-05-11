@@ -1,0 +1,5 @@
+[
+"plugins/feed-reader.json5",
+"plugins/zip-code.json5",
+"plugins/fact-checker.json5",
+]

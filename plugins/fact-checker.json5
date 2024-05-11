@@ -1,0 +1,35 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "Fact Checker",
+        "description": "Checks the validity of a fact",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "Svemir Brkic",
+        "web": "https://github.com/svemir/openagents-plugins-factcheck",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // Simplified template for plugins, see feed-reader.json5 for an example using a full template
+    "mini-template":{
+        "main":"https://github.com/svemir/openagents-plugins-factcheck/raw/main/plugin.wasm",
+        "input":"{\"statement\":\"{{in.fact}}\",\"key\":\"%secret.factcheck_api%\"}",
+    },   
+    "sockets":{
+        "in":{
+            "fact":{
+                "type": "string",
+                "description": "The fact to check",
+                "required": true,
+            }
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description": "The RSS feed",
+            }
+        }
+    }
+}
