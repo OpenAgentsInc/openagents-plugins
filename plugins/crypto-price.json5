@@ -1,0 +1,35 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "Crypto Price",
+        "description": "Get the latest USD price of a cryptocurrency",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "Svemir Brkic",
+        "web": "https://github.com/darkvallen/Crypto-Price-Plugin",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // Simplified template for plugins, see feed-reader.json5 for an example using a full template
+    "mini-template":{
+        "main":"https://github.com/OpenAgentsInc/plugin-crypto-prices/raw/main/plugin.wasm",
+        "input":"{{in.symbol}}",
+    },   
+    "sockets":{
+        "in":{
+            "symbol":{
+                "type": "string",
+                "description": "The symbol of the cryptocurrency",
+                "required": true,
+            }
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description": "The price of the cryptocurrency in USD",
+            }
+        }
+    }
+}
