@@ -1,0 +1,35 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "Web Screenshot",
+        "description": "Create a screenshot of a web page",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "nkn18",
+        "web": "https://github.com/nkn18/Web-Screenshot-Plugin",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // Simplified template for plugins, see feed-reader.json5 for an example using a full template
+    "mini-template":{
+        "main":"https://github.com/OpenAgentsInc/Web-Screenshot-Plugin/raw/main/plugin.wasm",
+        "input":"{{in.url}}",
+    },   
+    "sockets":{
+        "in":{
+            "url":{
+                "type": "string",
+                "description": "The URL of the web page to screenshot",
+                "required": true,
+            }
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description": "The http link of the screenshot",
+            }
+        }
+    }
+}
