@@ -4,4 +4,5 @@
 "plugins/zip-code.json5",
 "plugins/fact-checker.json5",
 "plugins/crypto-price.json5",
+"plugins/weather.json5",
 ]
