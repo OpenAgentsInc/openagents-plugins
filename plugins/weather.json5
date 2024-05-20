@@ -1,0 +1,35 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "Weather",
+        "description": "Get current weather",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "yuzurushX",
+        "web": "https://github.com/yuzurushX/Weather-Plugin-OpenAgents",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // Simplified template for plugins, see feed-reader.json5 for an example using a full template
+    "mini-template":{
+        "main":"https://github.com/OpenAgentsInc/plugin-weather/raw/main/plugin.wasm",
+        "input":"{{in.cityOrArea}}",
+    },   
+    "sockets":{
+        "in":{
+            "cityOrArea":{
+                "type": "string",
+                "description": "The city or area to get the weather for",
+                "required": true,
+            }
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description": "The weather data",
+            }
+        }
+    }
+}

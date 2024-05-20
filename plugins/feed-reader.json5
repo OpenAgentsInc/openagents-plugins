@@ -19,7 +19,7 @@
         \"created_at\": {{{sys.timestamp_seconds}}},\
         \"tags\": [\
             [\"param\",\"run-on\", \"openagents/extism-runtime\" ],\
-            [\"param\",\"main\",\"https://github.com/DJrOf/rss-feed-plugin/raw/main/plugin.wasm\"],\
+            [\"param\",\"main\",\"https://github.com/OpenAgentsInc/plugin-rss-feed/blob/main/plugin.wasm\"],\
             [\"i\", \"{{in.feed}}\", \"text\", \"\",  \"\"],\
             [\"expiration\", \"{{{sys.expiration_timestamp_seconds}}}\"]\
         ],\

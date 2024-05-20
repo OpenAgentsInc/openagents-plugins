@@ -3,8 +3,8 @@
         "kind": 5003,
         "name": "Fact Checker",
         "description": "Checks the validity of a fact",
-        "tos": "https://openagents.com/terms",
-        "privacy": "https://openagents.com/privacy",
+        "tos": "https://developers.google.com/terms/",
+        "privacy": "https://developers.google.com/terms/",
         "author": "Svemir Brkic",
         "web": "https://github.com/svemir/openagents-plugins-factcheck",
         "picture": "",
@@ -28,7 +28,7 @@
         "out":{
             "output":{
                 "type": "string",
-                "description": "The RSS feed",
+                "description": "The output from the fact checker",
             }
         }
     }
