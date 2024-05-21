@@ -15,7 +15,7 @@
     // Simplified template for plugins, see feed-reader.json5 for an example using a full template
     "mini-template":{
         "main":"https://github.com/OpenAgentsInc/plugin-translation/raw/main/plugin.wasm",
-        "input":"{\"text\": \"{{in.text}}\", \"to\": \"{{in.target_lang}}\"}",
+        "input":"{\"text\": \"{{in.text}}\", \"to\": \"{{in.target_lang}}\", \"api_key\":\"%secret.api_key%\"}",
     },   
     "sockets":{
         "in":{
