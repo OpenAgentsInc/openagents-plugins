@@ -2,7 +2,7 @@
     "meta":{
         "kind": 5003,
         "name": "Web Screenshot",
-        "description": "Create a screenshot of a web page",
+        "description": "Take a screenshot of a web page",
         "tos": "https://openagents.com/terms",
         "privacy": "https://openagents.com/privacy",
         "author": "nkn18",
