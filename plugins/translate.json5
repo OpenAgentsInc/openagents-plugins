@@ -1,0 +1,40 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "Translate",
+        "description": "Translate text from one language to another",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "AndrewLWZZ",
+        "web": "https://github.com/AndrewLWZZ/Translation-Plugin",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // Simplified template for plugins, see feed-reader.json5 for an example using a full template
+    "mini-template":{
+        "main":"https://github.com/OpenAgentsInc/plugin-translation/blob/main/plugin.wasm",
+        "input":"{\"text\": \"{{text}}\", \"to\": \"{{target_lang}}\"}",
+    },   
+    "sockets":{
+        "in":{
+            "text":{
+                "type": "string",
+                "description": "The text to be translated",
+                "required": true,
+            },
+            "target_lang":{
+                "type": "string",
+                "description": "The target language code (e.g. 'en', 'zh')",
+                "required": true,
+            }
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description": "The translated text",
+            }
+        }
+    }
+}
