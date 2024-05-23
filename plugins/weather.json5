@@ -15,13 +15,13 @@
     // Simplified template for plugins, see feed-reader.json5 for an example using a full template
     "mini-template":{
         "main":"https://github.com/OpenAgentsInc/plugin-weather/raw/main/plugin.wasm",
-        "input":"{{in.cityOrArea}}",
+        "input":"{{in.city}}",
     },   
     "sockets":{
         "in":{
-            "cityOrArea":{
+            "city":{
                 "type": "string",
-                "description": "The city or area to get the weather for",
+                "description": "The city to get the weather for",
                 "required": true,
             }
         },
