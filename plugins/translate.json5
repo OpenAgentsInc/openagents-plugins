@@ -1,5 +1,5 @@
 {
-    "enabled":false,
+    "enabled":true,
     "meta":{
         "kind": 5003,
         "name": "Translate",
