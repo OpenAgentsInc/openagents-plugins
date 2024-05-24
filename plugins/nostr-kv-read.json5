@@ -1,0 +1,43 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "Nostr KV - Read",
+        "description": "Read a key-value pair stored by someone else",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "riccardobl",
+        "web": "https://github.com/riccardobl/openagents-plugins-kv",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // Simplified template for plugins, see feed-reader.json5 for an example using a full template
+    "mini-template":{
+        "main":"https://github.com/riccardobl/openagents-plugins-kv/raw/releases/v0.2/dist/plugin.wasm",
+        "input":"{\
+            \"action\":\"get\", \
+            \"kvprovider\":\"https://nostr.rblb.it:7778\",\
+            \"key\":\"{{in.key}}\", \
+            \"maxHistory\":10,
+            \"relays\":[\"wss://nostr.openagents.com:7777\"] \
+        }",
+    },   
+    "sockets":{
+        "in":{
+            "key":{
+                "type": "string",
+                "description": "The key to read",
+                "required": true,
+            },
+      
+         
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description":  "Response from the KV store",
+            }
+        }
+    }
+}
