@@ -14,7 +14,7 @@
     },
     // Simplified template for plugins, see feed-reader.json5 for an example using a full template
     "mini-template":{
-        "main":"https://github.com/OpenAgentsInc/plugin-latest-news/blob/main/plugin.wasm",
+        "main":"https://github.com/OpenAgentsInc/plugin-latest-news/raw/main/plugin.wasm",
         "input":"{{in.query}}",
     },   
     "sockets":{
