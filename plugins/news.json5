@@ -1,0 +1,35 @@
+{
+    "meta":{
+        "kind": 5003,
+        "name": "Latest News",
+        "description": "Get the latest news for a given query",
+        "tos": "https://openagents.com/terms",
+        "privacy": "https://openagents.com/privacy",
+        "author": "califa11",
+        "web": "https://github.com/califa11/OpenAgents-Latest-News-Plugin",
+        "picture": "",
+        "tags": [
+            "tool"
+        ]
+    },
+    // Simplified template for plugins, see feed-reader.json5 for an example using a full template
+    "mini-template":{
+        "main":"https://github.com/OpenAgentsInc/plugin-latest-news/blob/main/plugin.wasm",
+        "input":"{{in.query}}",
+    },   
+    "sockets":{
+        "in":{
+            "query":{
+                "type": "string",
+                "description": "The query to search for",
+                "required": true,
+            }
+        },
+        "out":{
+            "output":{
+                "type": "string",
+                "description": "The latest news",
+            }
+        }
+    }
+}
