@@ -1,4 +1,5 @@
 [
+"plugins/nostr-kv-write.json5",
 "plugins/feed-reader.json5",
 "plugins/web-screenshot.json5",
 "plugins/zip-code.json5",
@@ -6,4 +7,6 @@
 "plugins/fact-checker.json5",
 "plugins/crypto-price.json5",
 "plugins/weather.json5",
+"plugins/nostr-kv-read.json5",
+"plugins/news.json5",
 ]
