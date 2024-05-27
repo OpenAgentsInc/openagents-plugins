@@ -5,12 +5,12 @@
         "description": "Get the latest USD price of a cryptocurrency",
         "tos": "https://openagents.com/terms",
         "privacy": "https://openagents.com/privacy",
-        "author": "Svemir Brkic",
+        "author": "darkvallen",
         "web": "https://github.com/darkvallen/Crypto-Price-Plugin",
         "picture": "",
         "tags": [
             "tool"
-        ]
+        ],
     },
     // Simplified template for plugins, see feed-reader.json5 for an example using a full template
     "mini-template":{
