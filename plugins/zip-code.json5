@@ -10,7 +10,8 @@
         "picture": "",
         "tags": [
             "tool"
-        ]
+        ],
+        "payment":"lightning:mcdonald55@bitnob.io"
     },
     // Simplified template for plugins, see feed-reader.json5 for an example using a full template
     "mini-template":{

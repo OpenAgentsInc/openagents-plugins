@@ -11,7 +11,8 @@
         "picture": "",
         "tags": [
             "tool"
-        ]
+        ],
+        "payment":"lightning:AndrewLWZZ@stacker.news"
     },
     // Simplified template for plugins, see feed-reader.json5 for an example using a full template
     "mini-template":{
